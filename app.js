@@ -97,7 +97,6 @@ if (flag == false) {
     alert("We are sorry " + input + " is not available in our bakery.");
 }
 
-
 // Task 15
 var input = prompt("Enter Password: ");
 input = input.toString();
@@ -155,4 +154,64 @@ for (var i = 0; i < str.length; i++) {
 }
 document.write("<br><br>Text: " + str);
 document.write("<br>There are " + count + " occurrence(s) of word 'the'");
+
+
+// ***** CHAPTER 26-30 *****
+// Task 1
+var num = prompt("Enter Positive Float Value");
+num = parseFloat(num);
+document.write("<br><br>Number: " + num);
+document.write("<br>Round Off Value: " + Math.round(num));
+document.write("<br>Floor Value: " + Math.floor(num));
+document.write("<br>Ceil Value: " + Math.ceil(num));
+
+// Task 2
+var num = prompt("Enter Negative Float Value");
+num = parseFloat(num);
+document.write("<br><br>Number: " + num);
+document.write("<br>Round Off Value: " + Math.round(num));
+document.write("<br>Floor Value: " + Math.floor(num));
+document.write("<br>Ceil Value: " + Math.ceil(num));
+
+// Task 3
+var num = prompt("Enter Number");
+document.write("<br><br>The absolute value of " + num + " is " + Math.abs(num));
+
+// Task 4
+var dice = Math.random() * 6;
+document.write("<br><br>Random Dice Value: " + Math.ceil(dice));
+
+// Task 5
+var coin = Math.random() * 2;
+var value = Math.ceil(coin);
+if (value === 1) {
+    document.write("<br><br>Random Coin Value: " + value);
+    document.write("<br>Its Heads");
+}
+else if (value === 2) {
+    document.write("<br><br>Random Coin Value: " + value);
+    document.write("<br>Its Tails");
+}
+
+// Task 6
+var rand = Math.random() * 100;
+document.write("<br><br>Random Number Between 1 and 100: " + Math.round(rand));
+
+// Task 7
+var weight = prompt("Enter your weight in kilograms:");
+document.write("<br><br>The weight of user is " + weight);
+
+// Task 8
+var secretNum = Math.random() * 10;
+secretNum = Math.round(secretNum);
+var value = prompt("Enter Number between 1 and 10");
+value = parseInt(value);
+
+if (secretNum == value) {
+    alert("Congratulations!");
+}
+else {
+    alert("Try Again");
+}
+
 
